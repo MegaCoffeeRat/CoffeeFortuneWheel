@@ -1,7 +1,6 @@
-import java.util.Random;
 
 public class RandomizerWheel {
-Random rndm = new Random();
+String[] size
 
     public static void printLn(String txt)
     {
@@ -9,11 +8,15 @@ Random rndm = new Random();
     }
     public  void randomizer(String whatTo)
     {
-        if(whatTo.equals("roast"))
+
+        if(whatTo.equals("size"))
         {
-            //prints out an option for which raost etc. (applies to other options like glass or cup, and flavoring)
+
         }
+
     }
+
+
 
 
 
