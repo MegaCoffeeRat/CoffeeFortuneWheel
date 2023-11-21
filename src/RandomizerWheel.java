@@ -9,7 +9,14 @@ String[] temp = {"Iced", "Warm", "Hot"};
 String Size = "";
 String Roast = "";
 String Syrup = "";
-String Tmep = "";
+String Temp = "";
+
+
+boolean s = false;
+boolean r = false;
+boolean sy = false;
+boolean t = false;
+
 
 
     public static void printLn(String txt)
@@ -38,6 +45,7 @@ String Tmep = "";
     }
 
 
+
     public  void randomizer(String whatTo)
     {
         if(whatTo.equals("size"))
@@ -45,19 +53,46 @@ String Tmep = "";
             int random = (int)(Math.random()*3);
             if(random == 1)
             {
-
+                Size = size[random];
+                printLn(Size);
             }
             else if(random == 2)
             {
-
+                Size = size[random];
+                printLn(Size);
             }
             else
             {
-
+                Size = size[random];
+                printLn(Size);
             }
-
-
+            s = true;
         }
+
+        else if(whatTo.equals("roast"))
+        {
+            int random = (int)(Math.random()*3);
+            if(random == 1)
+            {
+                Roast = roast[random];
+                printLn(Roast);
+            }
+            else if(random == 2)
+            {
+                Roast = roast[random];
+                printLn(Roast);
+            }
+            else
+            {
+                Roast = roast[random];
+                printLn(Roast);
+            }
+            r = true;
+        }
+
+
+
+
 
     }
 
