@@ -1,36 +1,16 @@
 class Main {
-
     public static void printLn(String txt)
     {
         System.out.println(txt);
     }
-
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws InterruptedException {
         RandomizerWheel rdz = new RandomizerWheel();
-        String whatTo = ""; whatTo = "size";
-
+        String whatTo = "";
         printLn("> Time to Generate You a Coffee! ");
-        rdz.randomizer(whatTo);
-        if(rdz.s)
-        {
-            whatTo = "roast";
+        for (int i = 0; i < rdz.NumOptions; i++) {
+            rdz.randomizer(i);
+            Thread.sleep(2000);
         }
-        else if(rdz.r)
-        {
-            whatTo = "syrup";
-        }
-        else if(rdz.sy)
-        {
-            whatTo = "temp";
-        }
-
-
-        rdz.randomizer(whatTo);
-
-
-
-        }
-
     }
+}
 
